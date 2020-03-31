@@ -1,0 +1,61 @@
+//caida rocas
+		this.fruit01_01 = new Fruits01(this, 608, -18, "fruit01").setScale(4);
+		this.fruit01_12 = new Fruits01(this, 36, -18, "fruit01").setScale(4);
+
+		const timeline = this.tweens.createTimeline();
+        timeline.add({
+            targets:  this.player,
+            alpha:1,
+            delay: 50,
+            duration: 100,
+            onComplete: () => {
+				this.fruit01_02 = new Fruits01(this, 556, -18, "fruit01").setScale(4);
+				this.fruit01_11 = new Fruits01(this, 88, -18, "fruit01").setScale(4);
+            }
+    
+        });
+        timeline.add({
+            targets:  this.player,
+            alpha:1,
+            delay: 50,
+            duration: 100,
+            onComplete: () => {
+				this.fruit01_03 = new Fruits01(this, 504, -18, "fruit01").setScale(4);
+				this.fruit01_10 = new Fruits01(this, 140, -18, "fruit01").setScale(4);
+            }
+    
+		});
+		timeline.add({
+            targets:  this.player,
+            alpha:1,
+            delay: 50,
+            duration: 100,
+            onComplete: () => {
+			this.fruit01_04 = new Fruits01(this, 452, -18, "fruit01").setScale(4);
+			this.fruit01_09 = new Fruits01(this, 192, -18, "fruit01").setScale(4);
+            }
+    
+		});	
+			timeline.add({
+            targets:  this.player,
+            alpha:1,
+            delay: 50,
+            duration: 100,
+            onComplete: () => {
+			this.fruit01_05 = new Fruits01(this, 400, -18, "fruit01").setScale(4);
+			this.fruit01_08 = new Fruits01(this, 244, -18, "fruit01").setScale(4);
+            }
+    
+		});
+		timeline.add({
+            targets:  this.player,
+            alpha:1,
+            delay: 50,
+            duration: 100,
+            onComplete: () => {
+			this.fruit01_06 = new Fruits01(this, 348, -18, "fruit01").setScale(4);
+			this.fruit01_07 = new Fruits01(this, 296, -18, "fruit01").setScale(4);
+            }
+    
+        });
+        timeline.play();

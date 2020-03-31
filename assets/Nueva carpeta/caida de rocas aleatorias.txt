@@ -1,0 +1,5 @@
+//caida rocas
+if(this.stone01.y > 400 || this.stone01.y > this.sys.game.config.height) {
+this.stone01.setPosition(Phaser.Math.Between(-12, 640,));
+this.stone01.y = -12;
+}
